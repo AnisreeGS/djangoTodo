@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Todo</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">Edit Todo Item</h1>
+        <form method="post" enctype="multipart/form-data" class="mt-4">
+            {% csrf_token %}
+            <div class="input-group">
+                {{ form.todo_text }}
+                <!-- <input type="text" name="todo_text" value="{{todo.todo_text }}">     -->
+                <button type="submit" class="btn btn-success">
+                    Update
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
