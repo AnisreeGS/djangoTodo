@@ -80,9 +80,9 @@ DATABASES = {
     }
 }
 
-# LOGIN_URL = 'login'
-# LOGIN_REDIRECT_URL = 'todo'
-# LOGOUT_REDIRECT_URL = 'login'
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'todo'
+LOGOUT_REDIRECT_URL = 'login'
 
 
 # Password validation

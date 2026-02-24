@@ -44,12 +44,17 @@
                 <div class="d-flex gap-2">
 
                     <!-- Edit Button -->
-                    <form action="{% url 'editTodo' eachTask.id %}" method="POST">
+                    <!-- <form action="{% url 'editTodo' eachTask.id %}" method="POST">
                         {% csrf_token %}
                         <button type="submit" class="btn btn-sm btn-primary">
                             Edit
                         </button>
-                    </form>
+                    </form> -->
+                    <a href="{% url 'editTodo' eachTask.id %}" class="btn btn-sm btn-primary">
+    Edit
+</a>
+
+
                     <!-- Delete Button -->
                     <form action="{% url 'deleteTodo' eachTask.id %}" method="post">
                         {% csrf_token %}
